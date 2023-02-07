@@ -30,6 +30,6 @@ $("#calculateGrade").click(function () {
     } else {
         grade = "E"
     };
-    //send to index.html to print
-    $("#Output").html("Your grade is " + grade + " with " + percentage + "%");
-})
+    //send to html to print
+    alert(`The percentage was ${Math.round(percentage)}, which is a(n) ${grade}.`);
+});
